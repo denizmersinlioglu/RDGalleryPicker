@@ -32,10 +32,10 @@ struct Utils {
     }
   }
 
-  static func fetchOptions() -> PHFetchOptions {
+static func fetchOptions(limit: Int = Int.max) -> PHFetchOptions {
     let options = PHFetchOptions()
     options.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false)]
-
+    options.fetchLimit = limit
     return options
   }
 

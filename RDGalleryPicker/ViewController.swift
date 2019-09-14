@@ -19,6 +19,7 @@ class ViewController: UIViewController, GalleryControllerDelegate {
     
     private lazy var imageSelectionActionSheet: UtilityController = {
         let utility = Utility.imageSelectionSheet.controller
+        utility.imageSelectionSheetController?.delegate = self
         return utility
     }()
     
@@ -98,5 +99,11 @@ class ViewController: UIViewController, GalleryControllerDelegate {
             let agrume = Agrume(images: compactImages)
             agrume.show(from: self.gallery, color: .black)
         })
+    }
+}
+
+extension ViewController: ImageSelectionActionSheetDelegate{
+    func closeButtonPressed() {
+        imageSelectionActionSheet.dismissUtility()
     }
 }

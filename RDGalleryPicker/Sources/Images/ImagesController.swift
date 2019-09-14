@@ -140,18 +140,7 @@ class ImagesController: UIViewController {
 extension ImagesController: PageAware {
 
   func pageDidShow() {
-    once.run {
-      library.reload {
-        self.gridView.loadingIndicator.stopAnimating()
-        self.dropdownController.albums = self.library.albums
-        self.dropdownController.tableView.reloadData()
-
-        if let album = self.library.albums.first {
-          self.selectedAlbum = album
-          self.show(album: album)
-        }
-      }
-    }
+    
   }
 }
 

@@ -19,6 +19,9 @@
                 <rect key="frame" x="0.0" y="0.0" width="217" height="196"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wMv-Bv-h7X">
+                        <rect key="frame" x="0.0" y="0.0" width="217" height="196"/>
+                    </imageView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Teh-Vt-hzA">
                         <rect key="frame" x="177" y="10" width="30" height="30"/>
                         <state key="normal" title="0"/>
@@ -28,9 +31,16 @@
             <constraints>
                 <constraint firstItem="Teh-Vt-hzA" firstAttribute="top" secondItem="qyl-qk-rgV" secondAttribute="top" constant="10" id="53l-AS-UMB"/>
                 <constraint firstAttribute="trailing" secondItem="Teh-Vt-hzA" secondAttribute="trailing" constant="10" id="JKK-SY-wYd"/>
+                <constraint firstAttribute="trailing" secondItem="wMv-Bv-h7X" secondAttribute="trailing" id="UBd-L6-u0H"/>
+                <constraint firstItem="wMv-Bv-h7X" firstAttribute="leading" secondItem="qyl-qk-rgV" secondAttribute="leading" id="euk-m5-jq4"/>
+                <constraint firstItem="wMv-Bv-h7X" firstAttribute="top" secondItem="qyl-qk-rgV" secondAttribute="top" id="oyN-5g-ltW"/>
+                <constraint firstAttribute="bottom" secondItem="wMv-Bv-h7X" secondAttribute="bottom" id="sxn-2U-QFg"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="gab-mj-Wdl"/>
             <size key="customSize" width="217" height="196"/>
+            <connections>
+                <outlet property="imageView" destination="wMv-Bv-h7X" id="OKo-ze-Tg8"/>
+            </connections>
             <point key="canvasLocation" x="297.82608695652175" y="50.223214285714285"/>
         </collectionViewCell>
     </objects>

@@ -21,7 +21,7 @@ extension Image {
   ///
   /// - Parameter size: The target size
   /// - Returns: The resolved UIImage, otherwise nil
-  public func resolve(completion: @escaping (UIImage?) -> Void) {
+public func resolve(size: CGSize? = nil,completion: @escaping (UIImage?) -> Void) {
     let options = PHImageRequestOptions()
     options.isNetworkAccessAllowed = true
     options.deliveryMode = .highQualityFormat
@@ -30,10 +30,12 @@ extension Image {
       width: asset.pixelWidth,
       height: asset.pixelHeight
     )
-
+    
+    let requestedSize = size ?? targetSize
+    
     PHImageManager.default().requestImage(
       for: asset,
-      targetSize: targetSize,
+      targetSize: requestedSize,
       contentMode: .default,
       options: options) { (image, _) in
         completion(image)

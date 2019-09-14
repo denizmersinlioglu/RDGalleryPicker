@@ -8,23 +8,20 @@ class ImagesLibrary {
 
   // MARK: - Initialization
 
-  init() {
-
-  }
+  init() { }
 
   // MARK: - Logic
-
-  func reload(_ completion: @escaping () -> Void) {
+func reload(limit: Int = Int.max, _ completion: @escaping () -> Void) {
     DispatchQueue.global().async {
-      self.reloadSync()
+      self.reloadSync(limit: limit)
       DispatchQueue.main.async {
         completion()
       }
     }
   }
 
-  fileprivate func reloadSync() {
-    let types: [PHAssetCollectionType] = [.smartAlbum, .album]
+  fileprivate func reloadSync(limit: Int = Int.max) {
+    let types: [PHAssetCollectionType] = [ .smartAlbum, .album]
 
     albumsFetchResults = types.map {
       return PHAssetCollection.fetchAssetCollections(with: $0, subtype: .any, options: nil)
@@ -35,7 +32,7 @@ class ImagesLibrary {
     for result in albumsFetchResults {
       result.enumerateObjects({ (collection, _, _) in
         let album = Album(collection: collection)
-        album.reload()
+        album.reload(fetchLimit: limit)
 
         if !album.items.isEmpty {
           self.albums.append(album)

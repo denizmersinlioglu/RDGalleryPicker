@@ -13,12 +13,12 @@ class Album {
     self.collection = collection
   }
 
-  func reload() {
+func reload(fetchLimit: Int = Int.max) {
     items = []
-
-    let itemsFetchResult = PHAsset.fetchAssets(in: collection, options: Utils.fetchOptions())
+    
+    let itemsFetchResult = PHAsset.fetchAssets(in: collection, options: Utils.fetchOptions(limit: fetchLimit))
     itemsFetchResult.enumerateObjects({ (asset, count, stop) in
-      if asset.mediaType == .image {
+      if asset.mediaType == .image  || asset.mediaType == .video {
         self.items.append(Image(asset: asset))
       }
     })
