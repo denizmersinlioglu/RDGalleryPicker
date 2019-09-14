@@ -72,6 +72,11 @@
 		4098EEC9232D0D33001255BB /* UIKit+Agrume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4098EEBF232D0D33001255BB /* UIKit+Agrume.swift */; };
 		4098EECA232D0D33001255BB /* AgrumeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4098EEC0232D0D33001255BB /* AgrumeImage.swift */; };
 		4098EECB232D0D33001255BB /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4098EEC1232D0D33001255BB /* Configuration.swift */; };
+		4098EECE232D17BC001255BB /* UtilityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4098EECD232D17BC001255BB /* UtilityController.swift */; };
+		4098EED0232D1809001255BB /* ImageSelectionUtility.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4098EECF232D1809001255BB /* ImageSelectionUtility.storyboard */; };
+		4098EED2232D1898001255BB /* ImageSelectionActionSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4098EED1232D1898001255BB /* ImageSelectionActionSheetController.swift */; };
+		4098EED5232D19DF001255BB /* ImageSelectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4098EED4232D19DF001255BB /* ImageSelectionCollectionViewCell.swift */; };
+		4098EED7232D19E5001255BB /* ImageSelectionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4098EED6232D19E5001255BB /* ImageSelectionCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,6 +168,11 @@
 		4098EEBF232D0D33001255BB /* UIKit+Agrume.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKit+Agrume.swift"; sourceTree = "<group>"; };
 		4098EEC0232D0D33001255BB /* AgrumeImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgrumeImage.swift; sourceTree = "<group>"; };
 		4098EEC1232D0D33001255BB /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		4098EECD232D17BC001255BB /* UtilityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityController.swift; sourceTree = "<group>"; };
+		4098EECF232D1809001255BB /* ImageSelectionUtility.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImageSelectionUtility.storyboard; sourceTree = "<group>"; };
+		4098EED1232D1898001255BB /* ImageSelectionActionSheetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectionActionSheetController.swift; sourceTree = "<group>"; };
+		4098EED4232D19DF001255BB /* ImageSelectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectionCollectionViewCell.swift; sourceTree = "<group>"; };
+		4098EED6232D19E5001255BB /* ImageSelectionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageSelectionCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +223,7 @@
 		4098EE1C232D0816001255BB /* RDGalleryPicker */ = {
 			isa = PBXGroup;
 			children = (
+				4098EECC232D17A9001255BB /* ImageSelectionActionSheet */,
 				4098EEB7232D0D33001255BB /* Agrume */,
 				4098EE4B232D0838001255BB /* Sources */,
 				4098EE1D232D0816001255BB /* AppDelegate.swift */,
@@ -403,6 +414,26 @@
 			path = Agrume;
 			sourceTree = "<group>";
 		};
+		4098EECC232D17A9001255BB /* ImageSelectionActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				4098EED3232D19C8001255BB /* ImageSelectionCollectionViewCell */,
+				4098EECD232D17BC001255BB /* UtilityController.swift */,
+				4098EECF232D1809001255BB /* ImageSelectionUtility.storyboard */,
+				4098EED1232D1898001255BB /* ImageSelectionActionSheetController.swift */,
+			);
+			path = ImageSelectionActionSheet;
+			sourceTree = "<group>";
+		};
+		4098EED3232D19C8001255BB /* ImageSelectionCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				4098EED4232D19DF001255BB /* ImageSelectionCollectionViewCell.swift */,
+				4098EED6232D19E5001255BB /* ImageSelectionCollectionViewCell.xib */,
+			);
+			path = ImageSelectionCollectionViewCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -507,9 +538,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4098EED0232D1809001255BB /* ImageSelectionUtility.storyboard in Resources */,
 				4098EE28232D0816001255BB /* LaunchScreen.storyboard in Resources */,
 				4098EE25232D0816001255BB /* Assets.xcassets in Resources */,
 				4098EE23232D0816001255BB /* Main.storyboard in Resources */,
+				4098EED7232D19E5001255BB /* ImageSelectionCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,6 +574,7 @@
 				4098EE92232D0838001255BB /* CameraView.swift in Sources */,
 				4098EEAF232D0838001255BB /* LocationManager.swift in Sources */,
 				4098EECB232D0D33001255BB /* Configuration.swift in Sources */,
+				4098EED2232D1898001255BB /* ImageSelectionActionSheetController.swift in Sources */,
 				4098EEA3232D0838001255BB /* AVAsset+Extensions.swift in Sources */,
 				4098EEAC232D0838001255BB /* Permission.swift in Sources */,
 				4098EE9F232D0838001255BB /* UIImageView+Extensions.swift in Sources */,
@@ -570,6 +604,7 @@
 				4098EE1E232D0816001255BB /* AppDelegate.swift in Sources */,
 				4098EE8E232D0838001255BB /* CameraController.swift in Sources */,
 				4098EE8B232D0838001255BB /* Cart.swift in Sources */,
+				4098EED5232D19DF001255BB /* ImageSelectionCollectionViewCell.swift in Sources */,
 				4098EE90232D0838001255BB /* CameraMan.swift in Sources */,
 				4098EE94232D0838001255BB /* Once.swift in Sources */,
 				4098EE8A232D0838001255BB /* ImagesLibrary.swift in Sources */,
@@ -582,6 +617,7 @@
 				4098EEA1232D0838001255BB /* UIView+Extensions.swift in Sources */,
 				4098EEC2232D0D33001255BB /* AgrumeOverlayView.swift in Sources */,
 				4098EEC3232D0D33001255BB /* Foundation+Agrume.swift in Sources */,
+				4098EECE232D17BC001255BB /* UtilityController.swift in Sources */,
 				4098EE91232D0838001255BB /* StackView.swift in Sources */,
 				4098EEA4232D0838001255BB /* UIScrollView+Extensions.swift in Sources */,
 				4098EEA0232D0838001255BB /* UIViewController+Extensions.swift in Sources */,

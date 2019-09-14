@@ -25,18 +25,14 @@ class DropdownController: UIViewController {
 
   weak var delegate: DropdownControllerDelegate?
 
-  // MARK: - Initialization
 
   // MARK: - Life cycle
-
   override func viewDidLoad() {
     super.viewDidLoad()
-
     setup()
   }
 
   // MARK: - Setup
-
   func setup() {
     view.backgroundColor = UIColor.clear
     tableView.backgroundColor = UIColor.clear
@@ -49,7 +45,6 @@ class DropdownController: UIViewController {
   }
 
   // MARK: - Logic
-
   func toggle() {
     guard !animating else { return }
 
@@ -72,7 +67,6 @@ class DropdownController: UIViewController {
   }
 
   // MARK: - Controls
-
   func makeTableView() -> UITableView {
     let tableView = UITableView()
     tableView.tableFooterView = UIView()
@@ -112,7 +106,6 @@ extension DropdownController: UITableViewDataSource, UITableViewDelegate {
   }
 
   // MARK: - UITableViewDelegate
-
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     tableView.deselectRow(at: indexPath, animated: true)
 

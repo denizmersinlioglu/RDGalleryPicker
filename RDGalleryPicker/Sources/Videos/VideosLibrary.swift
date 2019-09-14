@@ -7,13 +7,9 @@ class VideosLibrary {
   var fetchResults: PHFetchResult<PHAsset>?
 
   // MARK: - Initialization
-
-  init() {
-
-  }
+  init() {}
 
   // MARK: - Logic
-
   func reload(_ completion: @escaping () -> Void) {
     DispatchQueue.global().async {
       self.reloadSync()
