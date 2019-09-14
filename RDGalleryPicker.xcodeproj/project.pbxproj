@@ -77,6 +77,16 @@
 		4098EED2232D1898001255BB /* ImageSelectionActionSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4098EED1232D1898001255BB /* ImageSelectionActionSheetController.swift */; };
 		4098EED5232D19DF001255BB /* ImageSelectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4098EED4232D19DF001255BB /* ImageSelectionCollectionViewCell.swift */; };
 		4098EED7232D19E5001255BB /* ImageSelectionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4098EED6232D19E5001255BB /* ImageSelectionCollectionViewCell.xib */; };
+		4098EEE8232D2385001255BB /* IndexPathConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4098EEDC232D2385001255BB /* IndexPathConverter.swift */; };
+		4098EEE9232D2385001255BB /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4098EEDD232D2385001255BB /* UITableView+Extensions.swift */; };
+		4098EEEA232D2385001255BB /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4098EEDE232D2385001255BB /* UICollectionView+Extensions.swift */; };
+		4098EEEB232D2385001255BB /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4098EEE0232D2385001255BB /* Array+Extensions.swift */; };
+		4098EEEC232D2385001255BB /* DeepDiff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4098EEE1232D2385001255BB /* DeepDiff.swift */; };
+		4098EEED232D2385001255BB /* WagnerFischer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4098EEE3232D2385001255BB /* WagnerFischer.swift */; };
+		4098EEEE232D2385001255BB /* Heckel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4098EEE4232D2385001255BB /* Heckel.swift */; };
+		4098EEEF232D2385001255BB /* MoveReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4098EEE5232D2385001255BB /* MoveReducer.swift */; };
+		4098EEF0232D2385001255BB /* DiffAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4098EEE6232D2385001255BB /* DiffAware.swift */; };
+		4098EEF1232D2385001255BB /* Change.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4098EEE7232D2385001255BB /* Change.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -173,6 +183,16 @@
 		4098EED1232D1898001255BB /* ImageSelectionActionSheetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectionActionSheetController.swift; sourceTree = "<group>"; };
 		4098EED4232D19DF001255BB /* ImageSelectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectionCollectionViewCell.swift; sourceTree = "<group>"; };
 		4098EED6232D19E5001255BB /* ImageSelectionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageSelectionCollectionViewCell.xib; sourceTree = "<group>"; };
+		4098EEDC232D2385001255BB /* IndexPathConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexPathConverter.swift; sourceTree = "<group>"; };
+		4098EEDD232D2385001255BB /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		4098EEDE232D2385001255BB /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
+		4098EEE0232D2385001255BB /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		4098EEE1232D2385001255BB /* DeepDiff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeepDiff.swift; sourceTree = "<group>"; };
+		4098EEE3232D2385001255BB /* WagnerFischer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WagnerFischer.swift; sourceTree = "<group>"; };
+		4098EEE4232D2385001255BB /* Heckel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Heckel.swift; sourceTree = "<group>"; };
+		4098EEE5232D2385001255BB /* MoveReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveReducer.swift; sourceTree = "<group>"; };
+		4098EEE6232D2385001255BB /* DiffAware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiffAware.swift; sourceTree = "<group>"; };
+		4098EEE7232D2385001255BB /* Change.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Change.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +243,7 @@
 		4098EE1C232D0816001255BB /* RDGalleryPicker */ = {
 			isa = PBXGroup;
 			children = (
+				4098EED8232D2338001255BB /* DeepDiff */,
 				4098EECC232D17A9001255BB /* ImageSelectionActionSheet */,
 				4098EEB7232D0D33001255BB /* Agrume */,
 				4098EE4B232D0838001255BB /* Sources */,
@@ -434,6 +455,31 @@
 			path = ImageSelectionCollectionViewCell;
 			sourceTree = "<group>";
 		};
+		4098EED8232D2338001255BB /* DeepDiff */ = {
+			isa = PBXGroup;
+			children = (
+				4098EEE2232D2385001255BB /* Algorithms */,
+				4098EEE0232D2385001255BB /* Array+Extensions.swift */,
+				4098EEE7232D2385001255BB /* Change.swift */,
+				4098EEE1232D2385001255BB /* DeepDiff.swift */,
+				4098EEE6232D2385001255BB /* DiffAware.swift */,
+				4098EEDC232D2385001255BB /* IndexPathConverter.swift */,
+				4098EEE5232D2385001255BB /* MoveReducer.swift */,
+				4098EEDE232D2385001255BB /* UICollectionView+Extensions.swift */,
+				4098EEDD232D2385001255BB /* UITableView+Extensions.swift */,
+			);
+			path = DeepDiff;
+			sourceTree = "<group>";
+		};
+		4098EEE2232D2385001255BB /* Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				4098EEE3232D2385001255BB /* WagnerFischer.swift */,
+				4098EEE4232D2385001255BB /* Heckel.swift */,
+			);
+			path = Algorithms;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -578,20 +624,26 @@
 				4098EEA3232D0838001255BB /* AVAsset+Extensions.swift in Sources */,
 				4098EEAC232D0838001255BB /* Permission.swift in Sources */,
 				4098EE9F232D0838001255BB /* UIImageView+Extensions.swift in Sources */,
+				4098EEF1232D2385001255BB /* Change.swift in Sources */,
+				4098EEEA232D2385001255BB /* UICollectionView+Extensions.swift in Sources */,
 				4098EEC4232D0D33001255BB /* AgrumeDataSource.swift in Sources */,
 				4098EEAB232D0838001255BB /* Utils.swift in Sources */,
 				4098EE20232D0816001255BB /* ViewController.swift in Sources */,
 				4098EE99232D0838001255BB /* VideoEditor.swift in Sources */,
 				4098EEA8232D0838001255BB /* ArrowButton.swift in Sources */,
 				4098EE9A232D0838001255BB /* EditInfo.swift in Sources */,
+				4098EEE8232D2385001255BB /* IndexPathConverter.swift in Sources */,
 				4098EE98232D0838001255BB /* VideoEditing.swift in Sources */,
 				4098EE96232D0838001255BB /* Constraints.swift in Sources */,
 				4098EE9C232D0838001255BB /* GalleryBundle.swift in Sources */,
+				4098EEF0232D2385001255BB /* DiffAware.swift in Sources */,
+				4098EEEC232D2385001255BB /* DeepDiff.swift in Sources */,
 				4098EEB5232D0838001255BB /* VideoBox.swift in Sources */,
 				4098EEA2232D0838001255BB /* String+Extensions.swift in Sources */,
 				4098EEB4232D0838001255BB /* VideoCell.swift in Sources */,
 				4098EEA6232D0838001255BB /* FrameView.swift in Sources */,
 				4098EE9E232D0838001255BB /* Array+Extensions.swift in Sources */,
+				4098EEED232D2385001255BB /* WagnerFischer.swift in Sources */,
 				4098EEA5232D0838001255BB /* EmptyView.swift in Sources */,
 				4098EE8F232D0838001255BB /* ShutterButton.swift in Sources */,
 				4098EE8D232D0838001255BB /* TripleButton.swift in Sources */,
@@ -611,17 +663,21 @@
 				4098EEAA232D0838001255BB /* Fetcher.swift in Sources */,
 				4098EEC9232D0D33001255BB /* UIKit+Agrume.swift in Sources */,
 				4098EE97232D0838001255BB /* AdvancedVideoEditor.swift in Sources */,
+				4098EEEE232D2385001255BB /* Heckel.swift in Sources */,
 				4098EEB2232D0838001255BB /* VideosController.swift in Sources */,
 				4098EE95232D0838001255BB /* DropdownController.swift in Sources */,
 				4098EEC8232D0D33001255BB /* Agrume.swift in Sources */,
 				4098EEA1232D0838001255BB /* UIView+Extensions.swift in Sources */,
+				4098EEEF232D2385001255BB /* MoveReducer.swift in Sources */,
 				4098EEC2232D0D33001255BB /* AgrumeOverlayView.swift in Sources */,
+				4098EEE9232D2385001255BB /* UITableView+Extensions.swift in Sources */,
 				4098EEC3232D0D33001255BB /* Foundation+Agrume.swift in Sources */,
 				4098EECE232D17BC001255BB /* UtilityController.swift in Sources */,
 				4098EE91232D0838001255BB /* StackView.swift in Sources */,
 				4098EEA4232D0838001255BB /* UIScrollView+Extensions.swift in Sources */,
 				4098EEA0232D0838001255BB /* UIViewController+Extensions.swift in Sources */,
 				4098EEC5232D0D33001255BB /* AgrumeCell.swift in Sources */,
+				4098EEEB232D2385001255BB /* Array+Extensions.swift in Sources */,
 				4098EEA9232D0838001255BB /* GridView.swift in Sources */,
 				4098EEB3232D0838001255BB /* VideosLibrary.swift in Sources */,
 				4098EE8C232D0838001255BB /* ImageCell.swift in Sources */,
