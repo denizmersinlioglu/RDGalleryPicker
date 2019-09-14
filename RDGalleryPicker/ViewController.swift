@@ -20,6 +20,7 @@ class ViewController: UIViewController, GalleryControllerDelegate {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
         
+        Config.tabsToShow = [.cameraTab, .imageTab]
         Config.VideoEditor.savesEditedVideoToLibrary = true
         
         button = UIButton(type: .system)
